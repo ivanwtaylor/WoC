@@ -1,0 +1,1520 @@
+{UTF-8}
+desired ten year success rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL TEN YEAR SUCCESS RATE\
+		 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR) ,TEN YEAR SUCCESS RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL TEN YEAR SUCCESS RATE , IF THEN ELSE\
+		(Time<=(COVID CRISIS ENDS-START YEAR
+	), TEN YEAR SUCCESS RATE DURING CRISIS , ten year success rate after covid crisis ))\
+		))
+	~	people/(person*year)
+	~		|
+
+desired five year success rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIVE YEAR SUCCESS RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),FIVE YEAR SUCCESS RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIVE YEAR SUCCESS RATE , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIVE YEAR SUCCESS RATE DURING CRISIS, five year success rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired long term failure rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL LONG TERM FAILURE RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),LONG TERM FAILURE RATE DURING CRISIS
+	, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL LONG TERM FAILURE RATE\
+		 , IF THEN ELSE(Time<=(COVID CRISIS ENDS-START YEAR
+	), LONG TERM FAILURE RATE DURING CRISIS , long term failure rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+COVID CRISIS STARTS=
+	2020
+	~	
+	~		|
+
+desired first year continuation rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIRST YEAR CONTINUATION RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),FIRST YEAR CONTINUATION RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIRST YEAR CONTINUATION RATE , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIRST YEAR CONTINUATION RATE DURING CRISIS , first year continuation rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired first year failure rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIRST YEAR FAILURE RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),FIRST YEAR FAILURE RATE DURING CRISIS
+	, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIRST YEAR FAILURE RATE\
+		 , IF THEN ELSE(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIRST YEAR FAILURE RATE DURING CRISIS , ‏first year failure rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired first year success rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIRST YEAR SUCCESS RATE\
+		 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR) ,FIRST YEAR SUCCESS RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIRST YEAR SUCCESS RATE , IF THEN ELSE\
+		(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIRST YEAR SUCCESS RATE DURING CRISIS, first year success rate after covid crisis\
+		 ))))
+	~	(people/person/year)
+	~		|
+
+desired five year continuation rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIVE YEAR CONTINUATION RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),FIVE YEAR CONTINUATION RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIVE YEAR CONTINUATION RATE , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIVE YEAR CONTINUATION RATE DURING CRISIS , five year continuation rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired five year failure rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL FIVE YEAR FAILURE RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),FIVE YEAR FAILURE RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL FIVE YEAR FAILURE RATE , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), FIVE YEAR FAILURE RATE DURING CRISIS , five year failure rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired restarting small business after successful exit rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE DURING CRISIS\
+		, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE\
+		 , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE DURING CRISIS , restarting small business after successful exit rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired start up rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL START UP RATE , IF THEN ELSE\
+		(Time<=(FINANCIAL CRISIS ENDS
+	-START YEAR),STARTUP RATE DURING CRISIS, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR\
+		), NORMAL START UP RATE , IF THEN ELSE(Time<=(COVID CRISIS ENDS-START YEAR), STARTUP RATE DURING CRISIS
+	 , start up rate after covid crisis ))))
+	~	people/(person*year)
+	~		|
+
+desired long term success rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL LONG TERM SUCCESS RATE\
+		 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR) ,LONG TERM SUCCESS RATE DURING CRISIS, IF THEN ELSE\
+		(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL LONG TERM SUCCESS RATE , IF THEN ELSE\
+		(Time<=(COVID CRISIS ENDS-START YEAR
+	), LONG TERM SUCCESS RATE DURING CRISIS, long term success rate after covid crisis )\
+		)))
+	~	people/(person*year)
+	~		|
+
+desired restarting small business after failed exit rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE\
+		 , IF THEN ELSE
+	(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE DURING CRISIS\
+		, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE\
+		 , IF THEN ELSE
+	(Time<=(COVID CRISIS ENDS-START YEAR
+	), RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE DURING CRISIS , restarting small business after failed exit rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired ten year continuation rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL TEN YEAR CONTINUATION RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),TEN YEAR CONTINUATION RATE FINANCIAL CRISIS
+	, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL TEN YEAR CONTINUATION RATE\
+		 , IF THEN ELSE(Time<=(COVID CRISIS ENDS-START YEAR
+	), TEN YEAR CONTINUATION RATE FINANCIAL CRISIS , ten year continuation rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+desired ten year failure rate=
+	IF THEN ELSE(Time<=(FINANCIAL CRISIS STARTS-START YEAR), NORMAL TEN YEAR FAILURE RATE
+	 , IF THEN ELSE(Time
+	<=(FINANCIAL CRISIS ENDS-START YEAR),TEN YEAR FAILURE RATE DURING CRISIS
+	, IF THEN ELSE(Time<=(COVID CRISIS STARTS-START YEAR), NORMAL TEN YEAR FAILURE RATE \
+		, IF THEN ELSE(Time<=(COVID CRISIS ENDS-START YEAR
+	), TEN YEAR FAILURE RATE DURING CRISIS , ten year failure rate after covid crisis
+	 ))))
+	~	people/(person*year)
+	~		|
+
+more years=
+	Entrepreneurs Small Business 5 to 10 Years Old*Ten Year Continuation Rate
+	~	people/year
+	~		|
+
+Restarting Small Business After Failed Business= INTEG (
+	change in restarting small business after failed business,
+		NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE)
+	~	people/(person*year)
+	~		|
+
+business failure before ten years=
+	Entrepreneurs Small Business 5 to 10 Years Old*Ten Year Failure Rate
+	~	people/year
+	~		|
+
+Start Up Rate= INTEG (
+	change in start up rate,
+		NORMAL START UP RATE)
+	~	people/(person*year)
+	~		|
+
+Ten Year Continuation Rate= INTEG (
+	change in ten year continuation rate,
+		NORMAL TEN YEAR CONTINUATION RATE)
+	~	people/(person*year)
+	~		|
+
+Restarting Small Business After Successful Exit Rate= INTEG (
+	change in restarting business after successful exit rate,
+		NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE)
+	~	people/(person*year)
+	~		|
+
+First Year Failure Rate= INTEG (
+	change in first year failure rate,
+		NORMAL FIRST YEAR FAILURE RATE)
+	~	people/(person*year)
+	~		|
+
+STARTUP RATE DURING CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+Ten Year Failure Rate= INTEG (
+	change in ten year failure rate,
+		NORMAL TEN YEAR FAILURE RATE)
+	~	people/(person*year)
+	~		|
+
+Long Term Failure Rate= INTEG (
+	change in long term failure rate,
+		NORMAL LONG TERM FAILURE RATE)
+	~	people/(person*year)
+	~		|
+
+First Year Continuation Rate= INTEG (
+	change in first year continuation rate,
+		NORMAL FIRST YEAR CONTINUATION RATE)
+	~	people/(person*year)
+	~		|
+
+Five Year Success Rate= INTEG (
+	change in five year success rate,
+		NORMAL FIVE YEAR SUCCESS RATE)
+	~	people/(person*year)
+	~		|
+
+Long Term Success Rate= INTEG (
+	change in long term success rate,
+		NORMAL LONG TERM SUCCESS RATE)
+	~	people/(person*year)
+	~		|
+
+First Year Success Rate= INTEG (
+	change in first year success rate,
+		NORMAL FIRST YEAR SUCCESS RATE)
+	~	people/(person*year)
+	~		|
+
+successful exit in first ten years=
+	Entrepreneurs Small Business 5 to 10 Years Old*Ten Year Success Rate
+	~	people/year
+	~		|
+
+Five Year Continuation Rate= INTEG (
+	change in five year continuation rate,
+		NORMAL FIVE YEAR CONTINUATION RATE)
+	~	people/(person*year)
+	~		|
+
+Ten Year Success Rate= INTEG (
+	change in ten year success rate,
+		NORMAL TEN YEAR SUCCESS RATE)
+	~	people/(person*year)
+	~		|
+
+Five Year Failure Rate= INTEG (
+	change in five year failure rate,
+		NORMAL FIVE YEAR FAILURE RATE)
+	~	people/(person*year)
+	~		|
+
+restarting small business after failed exit rate after covid crisis=
+	NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE*RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+first year continuation rate after covid crisis=
+	NORMAL FIRST YEAR CONTINUATION RATE*FIRST YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+restarting small business after successful exit rate after covid crisis=
+	NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE*RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+‏first year failure rate after covid crisis=
+	NORMAL FIRST YEAR FAILURE RATE*FIRST YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+TEN YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+first year success rate after covid crisis=
+	NORMAL FIRST YEAR SUCCESS RATE*FIRST YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+start up rate after covid crisis=
+	NORMAL START UP RATE*STARTUP RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+TEN YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+STARTUP RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+five year continuation rate after covid crisis=
+	NORMAL FIVE YEAR CONTINUATION RATE*FIVE YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLER
+	~	people/(person*year)
+	~		|
+
+FIVE YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLER=
+	1
+	~	Dmnl
+	~		|
+
+long term success rate after covid crisis=
+	NORMAL LONG TERM SUCCESS RATE*LONG TERM SUCCESS RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+LONG TERM SUCCESS RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+NORMAL START UP RATE=
+	0.11
+	~	people/(person*year)
+	~		|
+
+ten year failure rate after covid crisis=
+	NORMAL TEN YEAR FAILURE RATE*TEN YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+ten year success rate after covid crisis=
+	NORMAL TEN YEAR SUCCESS RATE*TEN YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+TEN YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+LONG TERM FAILUR RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+ten year continuation rate after covid crisis=
+	NORMAL TEN YEAR CONTINUATION RATE*TEN YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+long term failure rate after covid crisis=
+	NORMAL LONG TERM FAILURE RATE*LONG TERM FAILUR RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+FIVE YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+FIVE YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER=
+	1
+	~	Dmnl
+	~		|
+
+five year success rate after covid crisis=
+	NORMAL FIVE YEAR SUCCESS RATE*FIVE YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+five year failure rate after covid crisis=
+	NORMAL FIVE YEAR FAILURE RATE*FIVE YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER
+	~	people/(person*year)
+	~		|
+
+RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE DURING CRISIS=
+	0.26
+	~	people/(person*year)
+	~		|
+
+change in first year continuation rate=
+	(desired first year continuation rate-First Year Continuation Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in first year failure rate=
+	(desired first year failure rate-First Year Failure Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in first year success rate=
+	(desired first year success rate-First Year Success Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in five year continuation rate=
+	(desired five year continuation rate-Five Year Continuation Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in five year failure rate=
+	(desired five year failure rate-Five Year Failure Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in five year success rate=
+	(desired five year success rate-Five Year Success Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in long term failure rate=
+	(desired long term failure rate-Long Term Failure Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in long term success rate=
+	(desired long term success rate-Long Term Success Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in restarting business after successful exit rate=
+	(desired restarting small business after successful exit rate-Restarting Small Business After Successful Exit Rate\
+		)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in restarting small business after failed business=
+	(desired restarting small business after failed exit rate-Restarting Small Business After Failed Business\
+		)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in start up rate=
+	(desired start up rate-Start Up Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in ten year continuation rate=
+	(desired ten year continuation rate-Ten Year Continuation Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in ten year failure rate=
+	(desired ten year failure rate-Ten Year Failure Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+change in ten year success rate=
+	(desired ten year success rate-Ten Year Success Rate)/TIME TO CHANGE RATES
+	~	people/(person*year*year)
+	~		|
+
+COVID CRISIS ENDS=
+	2022
+	~	year
+	~		|
+
+NORMAL FIVE YEAR SUCCESS RATE=
+	0.17
+	~	people/(person*year)
+	~		|
+
+FIVE YEAR SUCCESS RATE DURING CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL FIRST YEAR SUCCESS RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE=
+	0.06
+	~	people/(person*year)
+	~		|
+
+FINANCIAL CRISIS ENDS=
+	2011
+	~	year
+	~		|
+
+FINANCIAL CRISIS STARTS=
+	2008
+	~	year
+	~		|
+
+NORMAL FIRST YEAR CONTINUATION RATE=
+	1.01
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR CONTINUATION RATE DURING CRISIS=
+	1.8
+	~	people/(person*year)
+	~		|
+
+NORMAL FIRST YEAR FAILURE RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR FAILURE RATE DURING CRISIS=
+	2.19
+	~	people/(person*year)
+	~		|
+
+FIRST YEAR SUCCESS RATE DURING CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL FIVE YEAR CONTINUATION RATE=
+	0.1
+	~	people/(person*year)
+	~		|
+
+FIVE YEAR CONTINUATION RATE DURING CRISIS=
+	0.03
+	~	people/(person*year)
+	~		|
+
+RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE DURING CRISIS=
+	0.5
+	~	people/(person*year)
+	~		|
+
+NORMAL FIVE YEAR FAILURE RATE=
+	0.1
+	~	people/(person*year)
+	~		|
+
+FIVE YEAR FAILURE RATE DURING CRISIS=
+	0.62
+	~	people/(person*year)
+	~		|
+
+NORMAL TEN YEAR SUCCESS RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+TEN YEAR SUCCESS RATE DURING CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+TEN YEAR CONTINUATION RATE FINANCIAL CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL LONG TERM FAILURE RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE=
+	0.27
+	~	people/(person*year)
+	~		|
+
+NORMAL LONG TERM SUCCESS RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+START YEAR=
+	0
+	~	year
+	~		|
+
+LONG TERM FAILURE RATE DURING CRISIS=
+	1.16
+	~	people/(person*year)
+	~		|
+
+TEN YEAR FAILURE RATE DURING CRISIS=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL TEN YEAR FAILURE RATE=
+	0.01
+	~	people/(person*year)
+	~		|
+
+NORMAL TEN YEAR CONTINUATION RATE=
+	0.12
+	~	people/(person*year)
+	~		|
+
+LONG TERM SUCCESS RATE DURING CRISIS=
+	0.02
+	~	people/(person*year)
+	~		|
+
+Entrepreneur Wannabes= INTEG (
+	people generating business ideas per year-start ups,
+		INITIAL ENTREPRENEUR WANNABES)
+	~	people
+	~		|
+
+IDEA RATE=
+	20000
+	~	people/year
+	~		|
+
+people generating business ideas per year=
+	IDEA RATE
+	~	people/year
+	~		|
+
+business failure after ten years=
+	Entrepreneurs Small Business More Than 10 Years Old*Long Term Failure Rate
+	~	people/year
+	~		|
+
+business failure before 5 years=
+	Entrepreneurs Small Business 1 to 5 Years Old*Five Year Failure Rate
+	~	people/year
+	~		|
+
+business failure in first year=
+	Entrepreneurs Small Business 0 to 1 Year Old*First Year Failure Rate
+	~	people/year
+	~		|
+
+Entrepreneurs in General Public After Failed Small Businesses= INTEG (
+	business failure after ten years+business failure before 5 years+business failure before ten years\
+		+business failure in first year-restarting new business after failure,
+		INITIAL ENTREPRENEURS OF FAILED SMALL BUSINESSES)
+	~	people
+	~		|
+
+Entrepreneurs in General Public After Successfully Exited Small Business= INTEG (
+	successful exit after ten years+successful exit in first five years+successful exit in first ten years\
+		+successful exit in first year-restarting new business after successs,
+		INITIAL ENTREPRENEURS SUCCESSFULLY EXITED SMALL BUSINESS)
+	~	people
+	~		|
+
+Entrepreneurs Small Business 0 to 1 Year Old= INTEG (
+	restarting new business after failure+restarting new business after successs+start ups\
+		-business failure in first year-second to fifth year of business-successful exit in first year\
+		,
+		INITIAL ENTREPRENEURS SMALL BUSINESS 0 TO 1 YEAR OLD)
+	~	people
+	~		|
+
+Entrepreneurs Small Business More Than 10 Years Old= INTEG (
+	more years-business failure after ten years-successful exit after ten years,
+		INITIAL ENTREPRENEURS SMALL BUSINESS MORE THAN 10 YEARS OLD)
+	~	people
+	~		|
+
+fifth to ten year of business=
+	Entrepreneurs Small Business 1 to 5 Years Old*Five Year Continuation Rate
+	~	people/year
+	~		|
+
+start ups=
+	Entrepreneur Wannabes*Start Up Rate
+	~	people/year
+	~		|
+
+restarting new business after failure=
+	Entrepreneurs in General Public After Failed Small Businesses*Restarting Small Business After Failed Business
+	~	people/year
+	~		|
+
+successful exit after ten years=
+	Entrepreneurs Small Business More Than 10 Years Old*Long Term Success Rate
+	~	people/year
+	~		|
+
+successful exit in first five years=
+	Entrepreneurs Small Business 1 to 5 Years Old*Five Year Success Rate
+	~	people/year
+	~		|
+
+successful exit in first year=
+	Entrepreneurs Small Business 0 to 1 Year Old*First Year Success Rate
+	~	people/year
+	~		|
+
+Entrepreneurs Small Business 5 to 10 Years Old= INTEG (
+	fifth to ten year of business-business failure before ten years-more years-successful exit in first ten years\
+		,
+		INITIAL ENTREPRENEURS SMALL BUSINESS 5 TO 10 YEARS OLD)
+	~	people
+	~		|
+
+restarting new business after successs=
+	Entrepreneurs in General Public After Successfully Exited Small Business*Restarting Small Business After Successful Exit Rate
+	~	people/year
+	~		|
+
+Entrepreneurs Small Business 1 to 5 Years Old= INTEG (
+	second to fifth year of business-business failure before 5 years-fifth to ten year of business\
+		-successful exit in first five years,
+		INITIAL ENTREPRENEURS SMALL BUSINESS 1 TO 5 YEARS OLD)
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS SMALL BUSINESS 1 TO 5 YEARS OLD=
+	300000
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS SMALL BUSINESS MORE THAN 10 YEARS OLD=
+	200000
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS SMALL BUSINESS 0 TO 1 YEAR OLD=
+	100000
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS SMALL BUSINESS 5 TO 10 YEARS OLD=
+	225000
+	~	people
+	~		|
+
+second to fifth year of business=
+	Entrepreneurs Small Business 0 to 1 Year Old*First Year Continuation Rate
+	~	people/year
+	~		|
+
+TIME TO CHANGE RATES=
+	2
+	~	years
+	~		|
+
+INITIAL ENTREPRENEUR WANNABES=
+	250000
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS OF FAILED SMALL BUSINESSES=
+	1e+006
+	~	people
+	~		|
+
+INITIAL ENTREPRENEURS SUCCESSFULLY EXITED SMALL BUSINESS=
+	80000
+	~	people
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 2030
+	~	year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 1994
+	~	year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.03125
+	~	year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Entrepreneur Model
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,5,0
+10,1,Entrepreneur Wannabes,257,410,62,41,3,131,0,0,0,0,0,0
+10,2,Entrepreneurs Small Business 0 to 1 Year Old,591,408,149,37,3,131,0,0,0,0,0,0
+10,3,Entrepreneurs Small Business 1 to 5 Years Old,1040,409,82,37,3,131,0,0,0,0,0,0
+10,4,Entrepreneurs Small Business 5 to 10 Years Old,1382,404,80,39,3,131,0,0,0,0,0,0
+10,5,Entrepreneurs Small Business More Than 10 Years Old,1719,395,88,43,3,131,0,0,0,0,0,0
+10,6,Entrepreneurs in General Public After Successfully Exited Small Business,1114,180,654,33,3,131,0,0,0,0,0,0
+10,7,Entrepreneurs in General Public After Failed Small Businesses,1099,657,668,29,3,131,0,0,0,0,0,0
+1,8,10,3,4,0,0,22,0,0,0,-1--1--1,,1|(896,402)|
+1,9,10,2,100,0,0,22,0,0,0,-1--1--1,,1|(781,402)|
+11,10,2124,829,402,6,8,34,3,0,0,1,0,0,0
+10,11,second to fifth year of business,829,429,67,19,40,3,0,0,-1,0,0,0
+1,12,14,4,4,0,0,22,0,0,0,-1--1--1,,1|(1256,404)|
+1,13,14,3,100,0,0,22,0,0,0,-1--1--1,,1|(1160,404)|
+11,14,2268,1205,404,6,8,34,3,0,0,1,0,0,0
+10,15,fifth to ten year of business,1205,431,64,19,40,3,0,0,-1,0,0,0
+1,16,18,5,4,0,0,22,0,0,0,-1--1--1,,1|(1591,398)|
+1,17,18,4,100,0,0,22,0,0,0,-1--1--1,,1|(1500,398)|
+11,18,2316,1545,398,6,8,34,3,0,0,1,0,0,0
+10,19,more years,1545,417,39,11,40,3,0,0,-1,0,0,0
+1,20,2,11,1,0,0,0,0,64,0,-1--1--1,,1|(784,461)|
+1,21,3,15,1,0,0,0,0,64,0,-1--1--1,,1|(1061,470)|
+1,22,4,19,1,0,0,0,0,64,0,-1--1--1,,1|(1394,461)|
+1,23,25,6,4,0,0,22,0,0,0,-1--1--1,,1|(694,250)|
+1,24,25,2,100,0,0,22,0,0,0,-1--1--1,,1|(694,335)|
+11,25,1180,694,294,8,6,33,131,0,0,4,0,0,0
+10,26,successful exit in first year,755,294,53,19,40,3,0,0,-1,0,0,0
+1,27,29,6,4,0,0,22,0,0,0,-1--1--1,,1|(1035,244)|
+1,28,29,3,100,0,0,22,0,0,0,-1--1--1,,1|(1035,329)|
+11,29,2220,1035,281,8,6,33,3,0,0,4,0,0,0
+10,30,successful exit in first five years,1109,281,66,19,40,3,0,0,-1,0,0,0
+1,31,33,6,4,0,0,22,0,0,0,-1--1--1,,1|(1392,246)|
+1,32,33,4,100,0,0,22,0,0,0,-1--1--1,,1|(1392,328)|
+11,33,2204,1392,286,8,6,33,3,0,0,4,0,0,0
+10,34,successful exit in first ten years,1453,286,53,19,40,3,0,0,-1,0,0,0
+1,35,37,6,4,0,0,22,0,0,0,-1--1--1,,1|(1704,245)|
+1,36,37,5,100,0,0,22,0,0,0,-1--1--1,,1|(1704,320)|
+11,37,1580,1704,283,8,6,33,3,0,0,4,0,0,0
+10,38,successful exit after ten years,1773,283,61,19,40,3,0,0,-1,0,0,0
+1,39,41,7,4,0,0,22,0,0,0,-1--1--1,,1|(1708,573)|
+1,40,41,5,100,0,0,22,0,0,0,-1--1--1,,1|(1708,472)|
+11,41,2188,1708,513,8,6,33,3,0,0,4,0,0,0
+10,42,business failure after ten years,1780,513,64,19,40,3,0,0,-1,0,0,0
+1,43,45,7,4,0,0,22,0,0,0,-1--1--1,,1|(1395,578)|
+1,44,45,4,100,0,0,22,0,0,0,-1--1--1,,1|(1395,479)|
+11,45,2028,1395,522,8,6,33,3,0,0,4,0,0,0
+10,46,business failure before ten years,1455,522,52,19,40,3,0,0,-1,0,0,0
+1,47,49,7,4,0,0,22,0,0,0,-1--1--1,,1|(1035,580)|
+1,48,49,3,100,0,0,22,0,0,0,-1--1--1,,1|(1035,483)|
+11,49,1260,1035,526,8,6,33,3,0,0,4,0,0,0
+10,50,business failure before 5 years,1091,526,48,19,40,3,0,0,-1,0,0,0
+1,51,53,7,4,0,0,22,0,0,0,-1--1--1,,1|(691,579)|
+1,52,53,2,100,0,0,22,0,0,0,-1--1--1,,1|(691,482)|
+11,53,2060,691,525,8,6,33,131,0,0,4,0,0,0
+10,54,business failure in first year,754,525,55,19,40,3,0,0,-1,0,0,0
+1,55,2,54,1,0,0,0,0,64,0,-1--1--1,,1|(729,525)|
+1,56,3,50,1,0,0,0,0,64,0,-1--1--1,,1|(994,444)|
+1,57,4,46,1,0,0,0,0,64,0,-1--1--1,,1|(1362,430)|
+1,58,5,42,1,0,0,0,0,64,0,-1--1--1,,1|(1775,423)|
+1,59,3,30,1,0,0,0,0,64,0,-1--1--1,,1|(1080,369)|
+1,60,4,34,1,0,0,0,0,64,0,-1--1--1,,1|(1439,358)|
+1,61,5,38,1,0,0,0,0,64,0,-1--1--1,,1|(1702,295)|
+10,62,First Year Success Rate,907,245,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,63,First Year Failure Rate,915,595,44,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,64,First Year Continuation Rate,930,519,62,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,65,62,26,1,0,0,0,0,64,0,-1--1--1,,1|(888,278)|
+1,66,64,11,1,0,0,0,0,64,0,-1--1--1,,1|(935,467)|
+1,67,63,54,1,0,0,0,0,64,0,-1--1--1,,1|(826,582)|
+10,68,Five Year Success Rate,1230,246,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,69,Five Year Failure Rate,1259,589,60,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,70,Five Year Continuation Rate,1275,510,62,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,71,68,30,1,0,0,0,0,64,0,-1--1--1,,1|(1224,278)|
+10,72,Long Term Failure Rate,1882,592,44,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,73,Long Term Success Rate,1864,222,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,74,72,42,1,0,0,0,0,64,0,-1--1--1,,1|(1809,559)|
+1,75,73,38,1,0,0,0,0,64,0,-1--1--1,,1|(1806,216)|
+1,76,70,15,1,0,0,0,0,64,0,-1--1--1,,1|(1271,444)|
+1,77,69,50,1,0,0,0,0,64,0,-1--1--1,,1|(1158,600)|
+10,78,INITIAL ENTREPRENEURS SUCCESSFULLY EXITED SMALL BUSINESS,838,39,99,28,8,3,0,0,0,0,0,0
+10,79,INITIAL ENTREPRENEURS OF FAILED SMALL BUSINESSES,822,792,99,28,8,3,0,0,0,0,0,0
+10,80,Start Up Rate,294,535,53,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,81,INITIAL ENTREPRENEUR WANNABES,106,272,63,28,8,3,0,0,0,0,0,0
+1,82,84,2,4,0,0,22,0,0,0,-1--1--1,,1|(505,334)|
+1,83,84,6,100,0,0,22,0,0,0,-1--1--1,,1|(505,249)|
+11,84,1996,505,292,8,6,33,3,0,0,4,0,0,0
+10,85,restarting new business after successs,585,292,72,19,40,3,0,0,-1,0,0,0
+1,86,88,2,4,0,0,22,0,0,0,-1--1--1,,1|(518,487)|
+1,87,88,7,100,0,0,22,0,0,0,-1--1--1,,1|(518,585)|
+11,88,2236,518,536,8,6,33,3,0,0,4,0,0,0
+10,89,restarting new business after failure,590,536,64,19,40,3,0,0,-1,0,0,0
+1,90,92,2,4,0,0,22,0,0,0,-1--1--1,,1|(409,413)|
+1,91,92,1,100,0,0,22,0,0,0,-1--1--1,,1|(341,413)|
+11,92,2140,370,413,6,8,34,3,0,0,1,0,0,0
+10,93,start ups,370,432,28,11,40,3,0,0,-1,0,0,0
+1,94,80,93,1,0,0,0,0,64,0,-1--1--1,,1|(348,522)|
+1,95,1,93,1,0,0,0,0,64,0,-1--1--1,,1|(277,450)|
+1,96,7,89,1,0,0,0,0,64,0,-1--1--1,,1|(810,701)|
+1,97,2,26,1,0,0,0,0,64,0,-1--1--1,,1|(715,368)|
+1,98,6,85,1,0,0,0,0,64,0,-1--1--1,,1|(872,117)|
+1,99,78,6,0,0,0,0,0,64,1,-1--1--1,,1|(964,103)|
+1,100,79,7,0,0,0,0,0,64,1,-1--1--1,,1|(952,728)|
+10,101,INITIAL ENTREPRENEURS SMALL BUSINESS 0 TO 1 YEAR OLD,487,45,99,28,8,3,0,0,0,0,0,0
+10,102,INITIAL ENTREPRENEURS SMALL BUSINESS 1 TO 5 YEARS OLD,1096,36,99,28,8,3,0,0,0,0,0,0
+10,103,INITIAL ENTREPRENEURS SMALL BUSINESS 5 TO 10 YEARS OLD,1406,35,111,30,8,131,0,0,0,0,0,0
+10,104,INITIAL ENTREPRENEURS SMALL BUSINESS MORE THAN 10 YEARS OLD,1698,36,99,28,8,3,0,0,0,0,0,0
+1,105,101,2,1,0,0,0,0,64,1,-1--1--1,,1|(462,110)|
+1,106,102,3,1,0,0,0,0,64,1,-1--1--1,,1|(1136,135)|
+1,107,103,4,1,0,0,0,0,64,1,-1--1--1,,1|(1443,108)|
+1,108,104,5,1,0,0,0,0,64,1,-1--1--1,,1|(1655,104)|
+10,109,Restarting Small Business After Successful Exit Rate,368,247,87,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,110,Restarting Small Business After Failed Business,334,588,68,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,111,109,85,1,0,0,0,0,64,0,-1--1--1,,1|(412,304)|
+1,112,110,89,1,0,0,0,0,64,0,-1--1--1,,1|(469,605)|
+12,113,48,28,413,10,8,0,3,0,0,-1,0,0,0
+1,114,116,1,4,0,0,22,0,0,0,-1--1--1,,1|(158,413)|
+1,115,116,113,100,0,0,22,0,0,0,-1--1--1,,1|(74,413)|
+11,116,48,116,413,6,8,34,3,0,0,1,0,0,0
+10,117,people generating business ideas per year,116,458,74,37,40,131,0,0,-1,0,0,0
+10,118,IDEA RATE,64,568,42,11,8,3,0,0,0,0,0,0
+1,119,118,117,1,0,0,0,0,64,0,-1--1--1,,1|(98,542)|
+1,120,81,1,0,0,0,0,0,64,1,-1--1--1,,1|(168,329)|
+10,121,Ten Year Success Rate,1600,243,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,122,Ten Year Continuation Rate,1616,523,62,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,123,Ten Year Failure Rate,1530,588,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,124,123,46,1,0,0,0,0,64,0,-1--1--1,,1|(1466,554)|
+1,125,122,19,1,0,0,0,0,64,0,-1--1--1,,1|(1597,456)|
+1,126,121,34,1,0,0,0,0,64,0,-1--1--1,,1|(1555,299)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Start Up and Restart Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Start Up Rate,819,168,60,37,3,131,0,0,0,0,0,0
+12,2,48,461,173,10,8,0,3,0,0,-1,0,0,0
+1,3,5,1,4,0,0,22,0,0,0,-1--1--1,,1|(690,170)|
+1,4,5,2,100,0,0,22,0,0,0,-1--1--1,,1|(540,170)|
+11,5,48,615,170,6,8,34,3,0,0,1,0,0,0
+10,6,change in start up rate,615,197,56,19,40,3,0,0,-1,0,0,0
+10,7,TIME TO CHANGE RATES,886,242,84,28,8,3,0,0,0,0,0,0
+1,8,7,6,1,0,0,0,0,64,0,-1--1--1,,1|(742,299)|
+1,9,1,6,1,0,0,0,0,64,0,-1--1--1,,1|(736,245)|
+10,10,Restarting Small Business After Successful Exit Rate,863,389,70,38,3,131,0,0,0,0,0,0
+10,11,Restarting Small Business After Failed Business,900,633,63,31,3,131,0,0,0,0,0,0
+12,12,48,565,390,10,8,0,3,0,0,-1,0,0,0
+1,13,15,10,4,0,0,22,0,0,0,-1--1--1,,1|(742,384)|
+1,14,15,12,100,0,0,22,0,0,0,-1--1--1,,1|(627,384)|
+11,15,48,685,384,6,8,34,3,0,0,1,0,0,0
+10,16,change in restarting business after successful exit rate,685,420,77,28,40,3,0,0,-1,0,0,0
+12,17,48,574,648,10,8,0,3,0,0,-1,0,0,0
+1,18,20,11,4,0,0,22,0,0,0,-1--1--1,,1|(776,648)|
+1,19,20,17,100,0,0,22,0,0,0,-1--1--1,,1|(644,648)|
+11,20,48,710,648,6,8,34,3,0,0,1,0,0,0
+10,21,change in restarting small business after failed business,710,684,79,28,40,3,0,0,-1,0,0,0
+1,22,10,16,1,0,0,0,0,64,0,-1--1--1,,1|(773,398)|
+1,23,11,21,1,0,0,0,0,64,0,-1--1--1,,1|(865,677)|
+10,24,Time,102,-22,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,desired start up rate,315,123,52,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,26,25,6,1,0,0,0,0,64,0,-1--1--1,,1|(351,172)|
+10,27,desired restarting small business after successful exit rate,255,365,90,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,28,27,16,1,0,0,0,0,64,0,-1--1--1,,1|(366,443)|
+10,29,desired restarting small business after failed exit rate,279,616,79,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,30,29,21,1,0,0,0,0,64,0,-1--1--1,,1|(351,663)|
+10,31,TIME TO CHANGE RATES,864,517,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,32,TIME TO CHANGE RATES,899,773,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,33,31,16,1,0,0,0,0,64,0,-1--1--1,,1|(786,514)|
+1,34,32,21,1,0,0,0,0,64,0,-1--1--1,,1|(799,755)|
+10,35,NORMAL START UP RATE,1044,128,68,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,36,35,1,1,0,0,0,0,64,1,-1--1--1,,1|(1002,156)|
+10,37,NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE,1077,350,99,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,38,NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE,1085,596,96,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,39,37,10,1,0,0,0,0,64,0,-1--1--1,,1|(1032,376)|
+1,40,38,11,1,0,0,0,0,64,0,-1--1--1,,1|(1003,622)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*First Year Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,First Year Success Rate,812,124,68,31,3,131,0,0,0,0,0,0
+10,2,First Year Failure Rate,807,359,68,30,3,131,0,0,0,0,0,0
+12,3,48,485,123,10,8,0,3,0,0,-1,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(684,123)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(554,123)|
+11,6,48,619,123,6,8,34,3,0,0,1,0,0,0
+10,7,change in first year success rate,619,150,59,19,40,3,0,0,-1,0,0,0
+12,8,48,491,359,10,8,0,3,0,0,-1,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(682,359)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(557,359)|
+11,11,48,620,359,6,8,34,3,0,0,1,0,0,0
+10,12,change in first year failure rate,620,386,59,19,40,3,0,0,-1,0,0,0
+10,13,First Year Continuation Rate,809,547,63,33,3,131,0,0,0,0,0,0
+12,14,48,502,545,10,8,0,3,0,0,-1,0,0,0
+1,15,17,13,4,0,0,22,0,0,0,-1--1--1,,1|(690,545)|
+1,16,17,14,100,0,0,22,0,0,0,-1--1--1,,1|(567,545)|
+11,17,48,629,545,6,8,34,3,0,0,1,0,0,0
+10,18,change in first year continuation rate,629,572,59,19,40,3,0,0,-1,0,0,0
+1,19,1,7,1,0,0,0,0,64,0,-1--1--1,,1|(756,172)|
+1,20,2,12,1,0,0,0,0,64,0,-1--1--1,,1|(735,386)|
+1,21,13,18,1,0,0,0,0,64,0,-1--1--1,,1|(759,588)|
+10,22,Time,95,-29,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,23,desired first year success rate,275,96,58,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,24,23,7,1,0,0,0,0,64,0,-1--1--1,,1|(362,165)|
+10,25,desired first year failure rate,271,339,58,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,26,desired first year continuation rate,249,527,58,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,27,25,12,1,0,0,0,0,64,0,-1--1--1,,1|(352,399)|
+1,28,26,18,1,0,0,0,0,64,0,-1--1--1,,1|(337,595)|
+10,29,TIME TO CHANGE RATES,811,240,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,30,TIME TO CHANGE RATES,838,439,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,31,TIME TO CHANGE RATES,825,660,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,32,30,12,1,0,0,0,0,64,0,-1--1--1,,1|(754,443)|
+1,33,31,18,1,0,0,0,0,64,0,-1--1--1,,1|(750,662)|
+1,34,29,7,1,0,0,0,0,64,0,-1--1--1,,1|(729,247)|
+10,35,NORMAL FIRST YEAR SUCCESS RATE,1065,104,65,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,36,NORMAL FIRST YEAR FAILURE RATE,1083,322,85,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,37,NORMAL FIRST YEAR CONTINUATION RATE,1099,499,91,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,38,35,1,1,0,0,0,0,64,0,-1--1--1,,1|(1035,125)|
+1,39,36,2,1,0,0,0,0,64,0,-1--1--1,,1|(1059,342)|
+1,40,37,13,1,0,0,0,0,64,0,-1--1--1,,1|(1013,540)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Five Year Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Five Year Success Rate,812,158,68,31,3,131,0,0,0,0,0,0
+10,2,Five Year Failure Rate,807,393,68,30,3,131,0,0,0,0,0,0
+12,3,48,485,157,10,8,0,3,0,0,-1,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(684,157)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(554,157)|
+11,6,48,619,157,6,8,34,3,0,0,1,0,0,0
+10,7,change in five year success rate,619,184,59,19,40,3,0,0,-1,0,0,0
+12,8,48,491,393,10,8,0,3,0,0,-1,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(682,393)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(557,393)|
+11,11,48,620,393,6,8,34,3,0,0,1,0,0,0
+10,12,change in five year failure rate,620,420,59,19,40,3,0,0,-1,0,0,0
+10,13,Five Year Continuation Rate,817,568,63,33,3,131,0,0,0,0,0,0
+12,14,48,510,566,10,8,0,3,0,0,-1,0,0,0
+1,15,17,13,4,0,0,22,0,0,0,-1--1--1,,1|(701,565)|
+1,16,17,14,100,0,0,22,0,0,0,-1--1--1,,1|(578,565)|
+11,17,48,642,565,6,8,34,3,0,0,1,0,0,0
+10,18,change in five year continuation rate,642,592,59,19,40,3,0,0,-1,0,0,0
+1,19,1,7,1,0,0,0,0,64,0,-1--1--1,,1|(753,207)|
+1,20,2,12,1,0,0,0,0,64,0,-1--1--1,,1|(722,431)|
+1,21,13,18,1,0,0,0,0,64,0,-1--1--1,,1|(786,595)|
+10,22,Time,81,13,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,23,TIME TO CHANGE RATES,838,282,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,24,TIME TO CHANGE RATES,872,479,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,TIME TO CHANGE RATES,893,680,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,26,desired five year success rate,260,131,57,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,27,desired five year failure rate,261,328,57,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,28,desired five year continuation rate,273,503,57,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,29,26,7,1,0,0,0,0,64,0,-1--1--1,,1|(332,188)|
+1,30,27,12,1,0,0,0,0,64,0,-1--1--1,,1|(368,421)|
+1,31,28,18,1,0,0,0,0,64,0,-1--1--1,,1|(344,549)|
+1,32,23,7,1,0,0,0,0,64,0,-1--1--1,,1|(737,290)|
+1,33,24,12,1,0,0,0,0,64,0,-1--1--1,,1|(799,497)|
+1,34,25,18,1,0,0,0,0,64,0,-1--1--1,,1|(783,678)|
+10,35,NORMAL FIVE YEAR SUCCESS RATE,1094,128,61,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,36,NORMAL FIVE YEAR FAILURE RATE,1097,336,85,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,37,NORMAL FIVE YEAR CONTINUATION RATE,1112,513,91,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,38,35,1,1,0,0,0,0,64,0,-1--1--1,,1|(1013,178)|
+1,39,36,2,1,0,0,0,0,64,0,-1--1--1,,1|(1023,376)|
+1,40,37,13,1,0,0,0,0,64,0,-1--1--1,,1|(976,560)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Ten Year Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Time,78,-8,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,2,Ten Year Success Rate,812,124,68,31,3,131,0,0,0,0,0,0
+10,3,Ten Year Failure Rate,799,358,60,29,3,131,0,0,0,0,0,0
+12,4,48,485,123,10,8,0,3,0,0,-1,0,0,0
+1,5,7,2,4,0,0,22,0,0,0,-1--1--1,,1|(684,123)|
+1,6,7,4,100,0,0,22,0,0,0,-1--1--1,,1|(554,123)|
+11,7,48,619,123,6,8,34,3,0,0,1,0,0,0
+10,8,change in ten year success rate,619,150,59,19,40,3,0,0,-1,0,0,0
+12,9,48,491,359,10,8,0,3,0,0,-1,0,0,0
+1,10,12,3,4,0,0,22,0,0,0,-1--1--1,,1|(682,359)|
+1,11,12,9,100,0,0,22,0,0,0,-1--1--1,,1|(557,359)|
+11,12,48,620,359,6,8,34,3,0,0,1,0,0,0
+10,13,change in ten year failure rate,620,386,59,19,40,3,0,0,-1,0,0,0
+10,14,Ten Year Continuation Rate,817,534,63,33,3,131,0,0,0,0,0,0
+12,15,48,510,532,10,8,0,3,0,0,-1,0,0,0
+1,16,18,14,4,0,0,22,0,0,0,-1--1--1,,1|(698,532)|
+1,17,18,15,100,0,0,22,0,0,0,-1--1--1,,1|(575,532)|
+11,18,48,637,532,6,8,34,3,0,0,1,0,0,0
+10,19,change in ten year continuation rate,637,559,59,19,40,3,0,0,-1,0,0,0
+1,20,2,8,1,0,0,0,0,64,0,-1--1--1,,1|(753,173)|
+1,21,3,13,1,0,0,0,0,64,0,-1--1--1,,1|(722,397)|
+1,22,14,19,1,0,0,0,0,64,0,-1--1--1,,1|(785,562)|
+10,23,Time,81,-21,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,24,desired ten year success rate,262,98,56,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,desired ten year failure rate,257,334,56,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,26,desired ten year continuation rate,253,495,57,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,27,24,8,1,0,0,0,0,64,0,-1--1--1,,1|(378,187)|
+1,28,25,13,1,0,0,0,0,64,0,-1--1--1,,1|(324,377)|
+1,29,26,19,1,0,0,0,0,64,0,-1--1--1,,1|(323,545)|
+10,30,TIME TO CHANGE RATES,837,260,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,31,TIME TO CHANGE RATES,838,439,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,32,TIME TO CHANGE RATES,843,640,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,33,30,8,1,0,0,0,0,64,0,-1--1--1,,1|(758,258)|
+1,34,31,13,1,0,0,0,0,64,0,-1--1--1,,1|(797,459)|
+1,35,32,19,1,0,0,0,0,64,0,-1--1--1,,1|(763,656)|
+10,36,NORMAL TEN YEAR SUCCESS RATE,1087,116,60,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,37,NORMAL TEN YEAR FAILURE RATE,1100,290,59,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,38,NORMAL TEN YEAR CONTINUATION RATE,1102,466,91,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,39,36,2,1,0,0,0,0,64,0,-1--1--1,,1|(1003,151)|
+1,40,37,3,1,0,0,0,0,64,0,-1--1--1,,1|(1029,329)|
+1,41,38,14,1,0,0,0,0,64,0,-1--1--1,,1|(1050,498)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Long Term Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Long Term Success Rate,812,209,68,31,3,131,0,0,0,0,0,0
+10,2,Long Term Failure Rate,807,444,68,30,3,131,0,0,0,0,0,0
+12,3,48,485,208,10,8,0,3,0,0,-1,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(684,208)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(554,208)|
+11,6,48,619,208,6,8,34,3,0,0,1,0,0,0
+10,7,change in long term success rate,619,235,59,19,40,3,0,0,-1,0,0,0
+12,8,48,491,444,10,8,0,3,0,0,-1,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(682,444)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(557,444)|
+11,11,48,620,444,6,8,34,3,0,0,1,0,0,0
+10,12,change in long term failure rate,620,471,59,19,40,3,0,0,-1,0,0,0
+1,13,1,7,1,0,0,0,0,64,0,-1--1--1,,1|(747,253)|
+1,14,2,12,1,0,0,0,0,64,0,-1--1--1,,1|(724,496)|
+10,15,Time,90,57,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,16,desired long term success rate,291,175,60,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,17,desired long term failure rate,282,384,60,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,18,16,7,1,0,0,0,0,64,0,-1--1--1,,1|(404,249)|
+1,19,17,12,1,0,0,0,0,64,0,-1--1--1,,1|(355,466)|
+10,20,TIME TO CHANGE RATES,822,329,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,21,TIME TO CHANGE RATES,817,567,67,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,22,20,7,1,0,0,0,0,64,0,-1--1--1,,1|(723,335)|
+1,23,21,12,1,0,0,0,0,64,0,-1--1--1,,1|(734,569)|
+10,24,NORMAL LONG TERM SUCCESS RATE,1068,157,66,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,NORMAL LONG TERM FAILURE RATE,1065,372,85,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,26,24,1,1,0,0,0,0,64,0,-1--1--1,,1|(987,200)|
+1,27,25,2,1,0,0,0,0,64,0,-1--1--1,,1|(1020,427)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Desired Startup and Restart Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,desired start up rate,716,-645,47,19,8,3,0,0,0,0,0,0
+10,2,NORMAL START UP RATE,1047,-772,78,28,8,3,0,0,0,0,0,0
+10,3,STARTUP RATE DURING CRISIS,1029,-615,96,28,8,131,0,0,0,0,0,0
+10,4,start up rate after covid crisis,1000,-462,59,19,8,3,0,0,0,0,0,0
+1,5,2,1,1,0,0,0,0,64,0,-1--1--1,,1|(930,-754)|
+1,6,3,1,1,0,0,0,0,64,0,-1--1--1,,1|(928,-667)|
+1,7,4,1,1,0,0,0,0,64,0,-1--1--1,,1|(920,-555)|
+10,8,START YEAR,517,-737,49,11,8,3,0,0,0,0,0,0
+10,9,FINANCIAL CRISIS STARTS,465,-625,70,25,8,131,0,0,0,0,0,0
+10,10,FINANCIAL CRISIS ENDS,465,-522,100,21,8,131,0,0,0,0,0,0
+10,11,COVID CRISIS ENDS,741,-420,75,17,8,131,0,0,0,0,0,0
+10,12,Time,693,-790,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,13,12,1,1,0,0,0,0,64,0,-1--1--1,,1|(719,-748)|
+1,14,8,1,1,0,0,0,0,64,0,-1--1--1,,1|(587,-720)|
+1,15,9,1,1,0,0,0,0,64,0,-1--1--1,,1|(514,-652)|
+1,16,10,1,1,0,0,0,0,64,0,-1--1--1,,1|(515,-553)|
+1,17,11,1,1,0,0,0,0,64,0,-1--1--1,,1|(711,-528)|
+10,18,desired restarting small business after successful exit rate,788,-131,86,28,8,131,0,0,0,0,0,0
+10,19,NORMAL RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE,1129,-294,160,35,8,131,0,0,0,0,0,0
+10,20,RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE DURING CRISIS,1197,-132,131,29,8,131,0,0,0,0,0,0
+10,21,restarting small business after successful exit rate after covid crisis,1103,27,146,30,8,131,0,0,0,0,0,0
+1,22,19,18,1,0,0,0,0,64,0,-1--1--1,,1|(990,-307)|
+1,23,20,18,1,0,0,0,0,64,0,-1--1--1,,1|(1104,-186)|
+1,24,21,18,1,0,0,0,0,64,0,-1--1--1,,1|(1011,-66)|
+10,25,Time,693,-790,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,26,desired restarting small business after failed exit rate,694,419,89,29,8,131,0,0,0,0,0,0
+10,27,NORMAL RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE,1009,256,116,42,8,131,0,0,0,0,0,0
+10,28,RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE DURING CRISIS,1019,383,125,35,8,131,0,0,0,0,0,0
+10,29,restarting small business after failed exit rate after covid crisis,954,601,97,28,8,131,0,0,0,0,0,0
+1,30,27,26,1,0,0,0,0,64,0,-1--1--1,,1|(854,269)|
+1,31,28,26,1,0,0,0,0,64,0,-1--1--1,,1|(870,333)|
+1,32,29,26,1,0,0,0,0,64,0,-1--1--1,,1|(825,499)|
+10,33,Time,654,201,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,34,33,26,1,0,0,0,0,64,0,-1--1--1,,1|(694,265)|
+10,35,START YEAR,511,-300,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,36,FINANCIAL CRISIS STARTS,397,-200,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,37,FINANCIAL CRISIS ENDS,369,-75,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,38,COVID CRISIS ENDS,649,57,87,23,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,39,35,18,1,0,0,0,0,64,0,-1--1--1,,1|(581,-272)|
+1,40,36,18,1,0,0,0,0,64,0,-1--1--1,,1|(497,-199)|
+1,41,37,18,1,0,0,0,0,64,0,-1--1--1,,1|(447,-102)|
+1,42,38,18,1,0,0,0,0,64,0,-1--1--1,,1|(718,-19)|
+10,43,Time,862,67,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,44,43,18,0,0,0,0,0,64,0,-1--1--1,,1|(830,-16)|
+10,45,START YEAR,429,248,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,46,FINANCIAL CRISIS STARTS,339,358,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,47,FINANCIAL CRISIS ENDS,356,502,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,48,COVID CRISIS ENDS,678,642,86,18,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,49,45,26,1,0,0,0,0,64,0,-1--1--1,,1|(511,274)|
+1,50,46,26,1,0,0,0,0,64,0,-1--1--1,,1|(430,360)|
+1,51,47,26,1,0,0,0,0,64,0,-1--1--1,,1|(437,452)|
+1,52,48,26,1,0,0,0,0,64,0,-1--1--1,,1|(648,605)|
+1,53,19,21,1,0,0,0,0,64,0,-1--1--1,,1|(1356,-207)|
+10,54,RESTARTING SMALL BUSINESS AFTER SUCCESSFUL EXIT RATE AFTER COVID CRISIS MULTIPLIER,1392,145,121,28,8,3,0,0,0,0,0,0
+1,55,54,21,1,0,0,0,0,64,0,-1--1--1,,1|(1291,128)|
+10,56,STARTUP RATE AFTER COVID CRISIS MULTIPLIER,1323,-438,95,30,8,131,0,0,0,0,0,0
+1,57,2,4,1,0,0,0,0,64,0,-1--1--1,,1|(1125,-690)|
+1,58,56,4,1,0,0,0,0,64,0,-1--1--1,,1|(1183,-429)|
+10,59,RESTARTING SMALL BUSINESS AFTER FAILED EXIT RATE AFTER COVID CRISIS MULTIPLIER,1383,620,117,28,8,3,0,0,0,0,0,0
+1,60,27,29,1,0,0,0,0,64,0,-1--1--1,,1|(1204,342)|
+1,61,59,29,1,0,0,0,0,64,0,-1--1--1,,1|(1201,649)|
+10,62,COVID CRISIS STARTS,539,-433,55,19,8,3,0,0,0,0,0,0
+1,63,62,1,1,0,0,0,0,64,0,-1--1--1,,1|(634,-519)|
+10,64,COVID CRISIS STARTS,486,9,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,65,64,18,1,0,0,0,0,64,0,-1--1--1,,1|(573,-12)|
+10,66,COVID CRISIS STARTS,478,592,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,67,66,26,1,0,0,0,0,64,0,-1--1--1,,1|(521,509)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*First Year Desired Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,desired first year success rate,728,-572,65,24,8,131,0,0,0,0,0,0
+10,2,NORMAL FIRST YEAR SUCCESS RATE,1047,-704,78,28,8,3,0,0,0,0,0,0
+10,3,FIRST YEAR SUCCESS RATE DURING CRISIS,1028,-546,95,29,8,131,0,0,0,0,0,0
+10,4,first year success rate after covid crisis,1009,-418,59,28,8,3,0,0,0,0,0,0
+1,5,2,1,1,0,0,0,0,64,0,-1--1--1,,1|(930,-686)|
+1,6,3,1,1,0,0,0,0,64,0,-1--1--1,,1|(928,-599)|
+1,7,4,1,1,0,0,0,0,64,0,-1--1--1,,1|(922,-502)|
+10,8,Time,693,-722,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,9,8,1,1,0,0,0,0,64,0,-1--1--1,,1|(719,-680)|
+10,10,desired first year failure rate,788,-63,90,28,8,131,0,0,0,0,0,0
+10,11,NORMAL FIRST YEAR FAILURE RATE,1109,-226,110,28,8,131,0,0,0,0,0,0
+10,12,FIRST YEAR FAILURE RATE DURING CRISIS,1197,-64,121,28,8,131,0,0,0,0,0,0
+10,13,‏first year failure rate after covid crisis,1073,86,69,19,8,131,0,0,0,0,0,0
+1,14,11,10,1,0,0,0,0,64,0,-1--1--1,,1|(990,-239)|
+1,15,12,10,1,0,0,0,0,64,0,-1--1--1,,1|(1104,-118)|
+1,16,13,10,1,0,0,0,0,64,0,-1--1--1,,1|(978,25)|
+10,17,Time,693,-722,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,18,desired first year continuation rate,694,487,75,28,8,131,0,0,0,0,0,0
+10,19,NORMAL FIRST YEAR CONTINUATION RATE,1014,315,120,28,8,131,0,0,0,0,0,0
+10,20,FIRST YEAR CONTINUATION RATE DURING CRISIS,1019,451,120,28,8,131,0,0,0,0,0,0
+10,21,first year continuation rate after covid crisis,1004,592,86,28,8,131,0,0,0,0,0,0
+1,22,19,18,1,0,0,0,0,64,0,-1--1--1,,1|(850,335)|
+1,23,20,18,1,0,0,0,0,64,0,-1--1--1,,1|(870,401)|
+1,24,21,18,1,0,0,0,0,64,0,-1--1--1,,1|(847,528)|
+10,25,Time,654,269,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,26,25,18,1,0,0,0,0,64,0,-1--1--1,,1|(694,333)|
+10,27,Time,891,127,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,28,27,10,0,0,0,0,0,64,0,-1--1--1,,1|(847,46)|
+10,29,START YEAR,512,-679,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,30,FINANCIAL CRISIS STARTS,424,-580,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,31,FINANCIAL CRISIS ENDS,412,-456,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,32,COVID CRISIS ENDS,753,-322,97,15,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,33,29,1,1,0,0,0,0,64,0,-1--1--1,,1|(638,-639)|
+1,34,30,1,1,0,0,0,0,64,0,-1--1--1,,1|(508,-591)|
+1,35,31,1,1,0,0,0,0,64,0,-1--1--1,,1|(475,-490)|
+1,36,32,1,1,0,0,0,0,64,0,-1--1--1,,1|(702,-382)|
+10,37,COVID CRISIS ENDS,728,127,69,18,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,38,37,10,0,0,0,0,0,64,0,-1--1--1,,1|(753,43)|
+10,39,FINANCIAL CRISIS ENDS,497,19,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,40,39,10,0,0,0,0,0,64,0,-1--1--1,,1|(618,-15)|
+10,41,FINANCIAL CRISIS STARTS,485,-98,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,42,41,10,0,0,0,0,0,64,0,-1--1--1,,1|(616,-82)|
+10,43,START YEAR,578,-189,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,44,43,10,0,0,0,0,0,64,0,-1--1--1,,1|(662,-138)|
+10,45,COVID CRISIS ENDS,732,649,97,18,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,46,45,18,0,0,0,0,0,64,0,-1--1--1,,1|(715,579)|
+10,47,FINANCIAL CRISIS ENDS,417,551,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,48,47,18,0,0,0,0,0,64,0,-1--1--1,,1|(538,523)|
+10,49,FINANCIAL CRISIS STARTS,417,407,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,50,49,18,0,0,0,0,0,64,0,-1--1--1,,1|(542,443)|
+10,51,START YEAR,498,298,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,52,51,18,0,0,0,0,0,64,0,-1--1--1,,1|(581,379)|
+10,53,FIRST YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER,1390,137,112,28,8,131,0,0,0,0,0,0
+10,54,FIRST YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER,1358,632,94,28,8,3,0,0,0,0,0,0
+10,55,FIRST YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER,1314,-368,84,28,8,3,0,0,0,0,0,0
+1,56,2,4,1,0,0,0,0,64,0,-1--1--1,,1|(1121,-637)|
+1,57,55,4,1,0,0,0,0,64,0,-1--1--1,,1|(1224,-340)|
+1,58,11,13,1,0,0,0,0,64,0,-1--1--1,,1|(1343,-118)|
+1,59,53,13,1,0,0,0,0,64,0,-1--1--1,,1|(1272,157)|
+1,60,19,21,1,0,0,0,0,64,0,-1--1--1,,1|(1155,384)|
+1,61,54,21,1,0,0,0,0,64,0,-1--1--1,,1|(1205,644)|
+10,62,COVID CRISIS STARTS,524,-361,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,63,62,1,1,0,0,0,0,64,0,-1--1--1,,1|(574,-428)|
+10,64,COVID CRISIS STARTS,574,95,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,65,64,10,1,0,0,0,0,64,0,-1--1--1,,1|(647,57)|
+10,66,COVID CRISIS STARTS,516,652,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,67,66,18,1,0,0,0,0,64,0,-1--1--1,,1|(553,607)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Five year desired rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,NORMAL FIVE YEAR SUCCESS RATE,1047,-755,84,28,8,3,0,0,0,0,0,0
+10,2,FIVE YEAR SUCCESS RATE DURING CRISIS,1001,-602,108,28,8,131,0,0,0,0,0,0
+10,3,five year success rate after covid crisis,972,-451,80,19,8,3,0,0,0,0,0,0
+10,4,Time,693,-773,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,5,NORMAL FIVE YEAR FAILURE RATE,1120,-277,82,28,8,131,0,0,0,0,0,0
+10,6,FIVE YEAR FAILURE RATE DURING CRISIS,1094,-115,117,32,8,131,0,0,0,0,0,0
+10,7,Time,693,-773,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,8,NORMAL FIVE YEAR CONTINUATION RATE,1014,264,111,28,8,131,0,0,0,0,0,0
+10,9,FIVE YEAR CONTINUATION RATE DURING CRISIS,988,396,130,32,8,131,0,0,0,0,0,0
+10,10,five year continuation rate after covid crisis,1042,559,117,30,8,131,0,0,0,0,0,0
+10,11,Time,654,218,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,12,Time,814,-286,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,13,START YEAR,512,-730,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,14,FINANCIAL CRISIS STARTS,424,-631,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,15,FINANCIAL CRISIS ENDS,426,-505,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,16,COVID CRISIS ENDS,705,-363,80,17,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,17,COVID CRISIS ENDS,807,95,78,19,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,18,FINANCIAL CRISIS ENDS,497,-32,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,19,FINANCIAL CRISIS STARTS,485,-149,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,20,START YEAR,578,-240,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,21,COVID CRISIS ENDS,685,645,75,20,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,22,FINANCIAL CRISIS ENDS,440,501,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,23,FINANCIAL CRISIS STARTS,435,363,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,24,START YEAR,498,247,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,desired five year success rate,701,-560,53,19,8,3,0,0,0,0,0,0
+1,26,13,25,1,0,0,0,0,64,0,-1--1--1,,1|(534,-680)|
+1,27,14,25,1,0,0,0,0,64,0,-1--1--1,,1|(467,-594)|
+1,28,15,25,1,0,0,0,0,64,0,-1--1--1,,1|(527,-477)|
+1,29,16,25,1,0,0,0,0,64,0,-1--1--1,,1|(723,-411)|
+1,30,7,25,1,0,0,0,0,64,0,-1--1--1,,1|(672,-726)|
+1,31,3,25,1,0,0,0,0,64,0,-1--1--1,,1|(875,-503)|
+1,32,2,25,1,0,0,0,0,64,0,-1--1--1,,1|(875,-618)|
+1,33,1,25,1,0,0,0,0,64,0,-1--1--1,,1|(938,-745)|
+10,34,desired five year failure rate,814,-99,53,19,8,3,0,0,0,0,0,0
+10,35,desired five year continuation rate,719,470,53,19,8,3,0,0,0,0,0,0
+1,36,20,34,1,0,0,0,0,64,0,-1--1--1,,1|(615,-215)|
+1,37,19,34,1,0,0,0,0,64,0,-1--1--1,,1|(601,-93)|
+1,38,18,34,1,0,0,0,0,64,0,-1--1--1,,1|(607,-13)|
+1,39,17,34,1,0,0,0,0,64,0,-1--1--1,,1|(825,4)|
+1,40,12,34,1,0,0,0,0,64,0,-1--1--1,,1|(800,-257)|
+1,41,6,34,1,0,0,0,0,64,0,-1--1--1,,1|(928,-105)|
+1,42,5,34,1,0,0,0,0,64,0,-1--1--1,,1|(963,-193)|
+1,43,11,35,1,0,0,0,0,64,0,-1--1--1,,1|(684,285)|
+1,44,24,35,1,0,0,0,0,64,0,-1--1--1,,1|(599,349)|
+1,45,23,35,1,0,0,0,0,64,0,-1--1--1,,1|(522,381)|
+1,46,22,35,1,0,0,0,0,64,0,-1--1--1,,1|(510,466)|
+1,47,21,35,1,0,0,0,0,64,0,-1--1--1,,1|(663,598)|
+1,48,8,35,1,0,0,0,0,64,0,-1--1--1,,1|(894,277)|
+1,49,9,35,1,0,0,0,0,64,0,-1--1--1,,1|(813,412)|
+1,50,10,35,1,0,0,0,0,64,0,-1--1--1,,1|(883,586)|
+10,51,five year failure rate after covid crisis,1169,9,78,19,8,3,0,0,-1,0,0,0
+1,52,51,34,1,0,0,0,0,64,0,-1--1--1,,1|(986,-12)|
+10,53,FIVE YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER,1326,-398,108,28,8,131,0,0,0,0,0,0
+10,54,FIVE YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER,1395,94,111,26,8,131,0,0,0,0,0,0
+10,55,FIVE YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLER,1426,588,116,31,8,131,0,0,0,0,0,0
+1,56,1,3,1,0,0,0,0,64,0,-1--1--1,,1|(1136,-659)|
+1,57,53,3,1,0,0,0,0,64,0,-1--1--1,,1|(1220,-391)|
+1,58,5,51,1,0,0,0,0,64,0,-1--1--1,,1|(1192,-235)|
+1,59,54,51,1,0,0,0,0,64,0,-1--1--1,,1|(1271,76)|
+1,60,8,10,1,0,0,0,0,64,0,-1--1--1,,1|(1130,357)|
+1,61,55,10,1,0,0,0,0,64,0,-1--1--1,,1|(1208,631)|
+10,62,COVID CRISIS STARTS,540,-386,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,63,COVID CRISIS STARTS,614,85,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,64,COVID CRISIS STARTS,542,570,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,65,62,25,1,0,0,0,0,64,0,-1--1--1,,1|(598,-401)|
+1,66,63,34,1,0,0,0,0,64,0,-1--1--1,,1|(689,65)|
+1,67,64,35,1,0,0,0,0,64,0,-1--1--1,,1|(585,506)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Ten year desired rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,desired ten year success rate,660,-606,53,19,8,131,0,0,0,0,0,0
+10,2,NORMAL TEN YEAR SUCCESS RATE,979,-738,80,28,8,3,0,0,0,0,0,0
+10,3,TEN YEAR SUCCESS RATE DURING CRISIS,921,-611,115,29,8,131,0,0,0,0,0,0
+10,4,ten year success rate after covid crisis,915,-443,78,19,8,3,0,0,0,0,0,0
+1,5,2,1,1,0,0,0,0,64,0,-1--1--1,,1|(862,-720)|
+1,6,3,1,1,0,0,0,0,64,0,-1--1--1,,1|(820,-637)|
+1,7,4,1,1,0,0,0,0,64,0,-1--1--1,,1|(837,-526)|
+10,8,Time,625,-756,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,9,8,1,1,0,0,0,0,64,0,-1--1--1,,1|(651,-714)|
+10,10,desired ten year failure rate,720,-97,53,19,8,131,0,0,0,0,0,0
+10,11,NORMAL TEN YEAR FAILURE RATE,1052,-260,79,28,8,131,0,0,0,0,0,0
+10,12,TEN YEAR FAILURE RATE DURING CRISIS,1026,-124,115,32,8,131,0,0,0,0,0,0
+10,13,ten year failure rate after covid crisis,1071,32,62,19,8,131,0,0,0,0,0,0
+1,14,11,10,1,0,0,0,0,64,0,-1--1--1,,1|(922,-273)|
+1,15,12,10,1,0,0,0,0,64,0,-1--1--1,,1|(935,-142)|
+1,16,13,10,1,0,0,0,0,64,0,-1--1--1,,1|(953,-26)|
+10,17,Time,625,-756,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,18,NORMAL TEN YEAR CONTINUATION RATE,946,281,107,28,8,131,0,0,0,0,0,0
+10,19,TEN YEAR CONTINUATION RATE FINANCIAL CRISIS,942,403,130,31,8,131,0,0,0,0,0,0
+10,20,ten year continuation rate after covid crisis,975,548,111,30,8,131,0,0,0,0,0,0
+10,21,Time,586,235,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,22,Time,697,-262,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,23,22,10,0,0,0,0,0,64,0,-1--1--1,,1|(706,-190)|
+10,24,START YEAR,444,-713,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,25,FINANCIAL CRISIS STARTS,356,-614,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,26,FINANCIAL CRISIS ENDS,344,-490,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,27,COVID CRISIS ENDS,660,-353,88,20,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,28,24,1,1,0,0,0,0,64,0,-1--1--1,,1|(570,-673)|
+1,29,25,1,1,0,0,0,0,64,0,-1--1--1,,1|(440,-625)|
+1,30,26,1,1,0,0,0,0,64,0,-1--1--1,,1|(407,-524)|
+1,31,27,1,1,0,0,0,0,64,0,-1--1--1,,1|(621,-419)|
+10,32,COVID CRISIS ENDS,715,111,79,23,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,33,32,10,0,0,0,0,0,64,0,-1--1--1,,1|(716,11)|
+10,34,FINANCIAL CRISIS ENDS,429,-15,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,35,34,10,0,0,0,0,0,64,0,-1--1--1,,1|(568,-55)|
+10,36,FINANCIAL CRISIS STARTS,417,-132,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,37,36,10,0,0,0,0,0,64,0,-1--1--1,,1|(566,-116)|
+10,38,START YEAR,510,-223,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,39,38,10,0,0,0,0,0,64,0,-1--1--1,,1|(601,-168)|
+10,40,COVID CRISIS ENDS,638,666,72,20,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,41,FINANCIAL CRISIS ENDS,361,517,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,42,FINANCIAL CRISIS STARTS,360,372,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,43,START YEAR,435,264,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,44,Time,625,-756,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,45,Time,101,-738,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,46,Time,102,-735,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,47,desired ten year continuation rate,663,434,63,28,8,131,0,0,0,0,0,0
+1,48,21,47,1,0,0,0,0,64,0,-1--1--1,,1|(607,258)|
+1,49,43,47,1,0,0,0,0,64,0,-1--1--1,,1|(522,297)|
+1,50,42,47,1,0,0,0,0,64,0,-1--1--1,,1|(473,369)|
+1,51,41,47,1,0,0,0,0,64,0,-1--1--1,,1|(413,490)|
+1,52,40,47,1,0,0,0,0,64,0,-1--1--1,,1|(645,564)|
+1,53,18,47,1,0,0,0,0,64,0,-1--1--1,,1|(861,270)|
+1,54,19,47,1,0,0,0,0,64,0,-1--1--1,,1|(794,382)|
+1,55,20,47,1,0,0,0,0,64,0,-1--1--1,,1|(789,551)|
+10,56,TEN YEAR SUCCESS RATE AFTER COVID CRISIS MULTIPLIER,1304,-437,104,32,8,131,0,0,0,0,0,0
+10,57,TEN YEAR FAILURE RATE AFTER COVID CRISIS MULTIPLIER,1364,88,98,26,8,131,0,0,0,0,0,0
+10,58,TEN YEAR CONTINUATION RATE AFTER COVID CRISIS MULTIPLIER,1340,595,123,29,8,131,0,0,0,0,0,0
+1,59,2,4,1,0,0,0,0,64,0,-1--1--1,,1|(1044,-647)|
+1,60,56,4,1,0,0,0,0,64,0,-1--1--1,,1|(1103,-407)|
+1,61,11,13,1,0,0,0,0,64,0,-1--1--1,,1|(1201,-191)|
+1,62,57,13,1,0,0,0,0,64,0,-1--1--1,,1|(1152,73)|
+1,63,18,20,1,0,0,0,0,64,0,-1--1--1,,1|(1073,355)|
+1,64,58,20,1,0,0,0,0,64,0,-1--1--1,,1|(1105,597)|
+10,65,COVID CRISIS STARTS,461,-410,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,66,COVID CRISIS STARTS,542,91,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,67,COVID CRISIS STARTS,495,591,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,68,65,1,1,0,0,0,0,64,0,-1--1--1,,1|(510,-493)|
+1,69,66,10,1,0,0,0,0,64,0,-1--1--1,,1|(563,44)|
+1,70,67,47,1,0,0,0,0,64,0,-1--1--1,,1|(538,536)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Long Term Desired Rates
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,desired long term success rate,670,215,61,24,8,131,0,0,0,0,0,0
+10,2,NORMAL LONG TERM SUCCESS RATE,1006,81,111,28,8,131,0,0,0,0,0,0
+10,3,LONG TERM SUCCESS RATE DURING CRISIS,951,217,108,27,8,131,0,0,0,0,0,0
+10,4,long term success rate after covid crisis,962,350,98,23,8,131,0,0,0,0,0,0
+1,5,2,1,1,0,0,0,0,64,0,-1--1--1,,1|(860,100)|
+1,6,3,1,1,0,0,0,0,64,0,-1--1--1,,1|(844,179)|
+1,7,4,1,1,0,0,0,0,64,0,-1--1--1,,1|(852,276)|
+10,8,Time,625,60,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,9,8,1,1,0,0,0,0,64,0,-1--1--1,,1|(651,102)|
+10,10,desired long term failure rate,720,719,51,19,8,131,0,0,0,0,0,0
+10,11,NORMAL LONG TERM FAILURE RATE,1084,556,104,31,8,131,0,0,0,0,0,0
+10,12,LONG TERM FAILURE RATE DURING CRISIS,1086,722,107,32,8,131,0,0,0,0,0,0
+10,13,long term failure rate after covid crisis,1062,846,70,19,8,131,0,0,0,0,0,0
+1,14,11,10,1,0,0,0,0,64,0,-1--1--1,,1|(926,538)|
+1,15,12,10,1,0,0,0,0,64,0,-1--1--1,,1|(983,682)|
+1,16,13,10,1,0,0,0,0,64,0,-1--1--1,,1|(898,750)|
+10,17,Time,625,60,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,18,Time,681,569,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,19,18,10,1,0,0,0,0,64,0,-1--1--1,,1|(709,640)|
+10,20,START YEAR,444,103,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,21,FINANCIAL CRISIS STARTS,356,202,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,22,FINANCIAL CRISIS ENDS,344,326,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,23,COVID CRISIS ENDS,689,481,78,20,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,24,20,1,1,0,0,0,0,64,0,-1--1--1,,1|(570,143)|
+1,25,21,1,1,0,0,0,0,64,0,-1--1--1,,1|(440,191)|
+1,26,22,1,1,0,0,0,0,64,0,-1--1--1,,1|(407,292)|
+1,27,23,1,1,0,0,0,0,64,0,-1--1--1,,1|(651,413)|
+10,28,COVID CRISIS ENDS,711,919,76,21,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,29,28,10,1,0,0,0,0,64,0,-1--1--1,,1|(691,815)|
+10,30,FINANCIAL CRISIS ENDS,429,801,55,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,31,30,10,1,0,0,0,0,64,0,-1--1--1,,1|(570,735)|
+10,32,FINANCIAL CRISIS STARTS,417,684,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,33,32,10,1,0,0,0,0,64,0,-1--1--1,,1|(571,680)|
+10,34,START YEAR,510,593,58,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,35,34,10,1,0,0,0,0,64,0,-1--1--1,,1|(608,624)|
+10,36,Time,625,60,26,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,37,LONG TERM SUCCESS RATE AFTER COVID CRISIS MULTIPLIER,1291,408,115,28,8,131,0,0,0,0,0,0
+1,38,2,4,1,0,0,0,0,64,0,-1--1--1,,1|(1081,158)|
+1,39,37,4,1,0,0,0,0,64,0,-1--1--1,,1|(1147,407)|
+1,40,11,13,1,0,0,0,0,64,0,-1--1--1,,1|(1199,624)|
+10,41,LONG TERM FAILUR RATE AFTER COVID CRISIS MULTIPLIER,1391,924,109,25,8,131,0,0,0,0,0,0
+1,42,41,13,1,0,0,0,0,64,0,-1--1--1,,1|(1209,929)|
+10,43,COVID CRISIS STARTS,482,432,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,44,COVID CRISIS STARTS,511,891,59,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,45,43,1,1,0,0,0,0,64,0,-1--1--1,,1|(497,355)|
+1,46,44,10,1,0,0,0,0,64,0,-1--1--1,,1|(552,824)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 12
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+///---\\\
+:L<%^E!@
+1:Current.vdf
+9:Current
+22:$,Dollar,Dollars,$s
+22:Day,Days
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+23:0
+15:0,0,0,0,0,0
+19:5,0
+27:2,
+34:0,
+4:Time
+5:Entrepreneurs Small Business 0 to 1 Year Old
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:0
+41:0
+24:1994
+25:2030
+26:2030
